@@ -1,6 +1,6 @@
 .include "50002/nominal.jsim"
 .include "50002/stdcell.jsim"
-.include "50002/2dcheckoff_3ns.jsim"
+.include "50002/2dcheckoff_4ns.jsim"
 
 
 * Definition of a black cell
