@@ -37,7 +37,7 @@ Xprep p[0] g0pre op0 g[0] gc
 
 
 * row 1
-Xr1c1 p1 g1 p0 g0 r1p1 r1g1 bc
+Xr1c1 p1 g1 g0 r1g1 gc
 Xr1c3 p3 g3 p2 g2 r1p3 r1g3 bc
 Xr1c5 p5 g5 p4 g4 r1p5 r1g5 bc
 Xr1c7 p7 g7 p6 g6 r1p7 r1g7 bc
@@ -62,30 +62,23 @@ Xr2c3 r1p3 r1g3 r1g1 r2g3 gc
 Xr2c6 p6 g6 r1p5 r1g5 r2p6 r2g6 bc
 Xr2c7 r1p7 r1g7 r1p5 r1g5 r2p7 r2g7 bc
 
-
 Xr2c10 p10 g10 r1p9 r1g9 r2p10 r2g10 bc
 Xr2c11 r1p11 r1g11 r1p9 r1g9 r2p11 r2g11 bc
-
 
 Xr2c14 p14 g14 r1p13 r1g13 r2p14 r2g14 bc
 Xr2c15 r1p15 r1g15 r1p13 r1g13 r2p15 r2g15 bc
 
-
 Xr2c18 p18 g18 r1p17 r1g17 r2p18 r2g18 bc
 Xr2c19 r1p19 r1g19 r1p17 r1g17 r2p19 r2g19 bc
-
 
 Xr2c22 p22 g22 r1p21 r1g21 r2p22 r2g22 bc
 Xr2c23 r1p23 r1g23 r1p21 r1g21 r2p23 r2g23 bc
 
-
 Xr2c26 p26 g26 r1p25 r1g25 r2p26 r2g26 bc
 Xr2c27 r1p27 r1g27 r1p25 r1g25 r2p27 r2g27 bc
 
-
 Xr2c30 p30 g30 r1p29 r1g29 r2p30 r2g30 bc
 Xr2c31 r1p31 r1g31 r1p29 r1g29 r2p31 r2g31 bc
-
 
 
 * row 3
@@ -108,7 +101,6 @@ Xr3c28 p28 g28 r2p27 r2g27 r3p28 r3g28 bc
 Xr3c29 r1p29 r1g29 r2p27 r2g27 r3p29 r3g29 bc
 Xr3c30 r2p30 r2g30 r2p27 r2g27 r3p30 r3g30 bc
 Xr3c31 r2p31 r2g31 r2p27 r2g27 r3p31 r3g31 bc
-
 
 
 * row 4
@@ -197,6 +189,6 @@ XVckt2 na31 nxb31 s31 vp2 and3
 XVckt vp1 vp2 v or2
 
 * generate n
-XbufferN s31 n buffer
+.connect s31 n
 
 .ends
