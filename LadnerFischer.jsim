@@ -197,6 +197,6 @@ XVckt2 na31 nxb31 s31 vp2 and3
 XVckt vp1 vp2 v or2
 
 * generate n
-.connect s31 n
+XbufferN s31 n buffer
 
 .ends
