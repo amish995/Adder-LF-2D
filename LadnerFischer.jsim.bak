@@ -1,19 +1,19 @@
 .include "50002/nominal.jsim"
 .include "50002/stdcell.jsim"
-.include "50002/2dcheckoff_4ns.jsim"
+.include "50002/2dcheckoff_3ns.jsim"
 
 
 * Definition of a black cell
 .subckt bc pik gik pkj gkj pij gij
 Xand1 pkj pik pij and2
 Xaa gkj pik gik gij1 aoi21
-Xorrinv gij1 gij inverter_2
+Xorrinv gij1 gij inverter
 .ends
 
 * Definition of a grey cell
 .subckt gc pik gik gkj gij
 Xaa gkj pik gik gij1 aoi21
-Xorrinv gij1 gij inverter
+Xorrinv gij1 gij inverter_2
 .ends
 
 * Definition of a white cell(generates P and G)
@@ -37,7 +37,7 @@ Xprep p[0] g0pre op0 g[0] gc
 
 
 * row 1
-Xr1c1 p1 g1 p0 g0 r1p1 r1g1 bc
+Xr1c1 p1 g1 g0 r1g1 gc
 Xr1c3 p3 g3 p2 g2 r1p3 r1g3 bc
 Xr1c5 p5 g5 p4 g4 r1p5 r1g5 bc
 Xr1c7 p7 g7 p6 g6 r1p7 r1g7 bc
@@ -56,8 +56,8 @@ Xr1c31 p31 g31 p30 g30 r1p31 r1g31 bc
 
 
 * row 2
-Xr2c2 p2 g2 r1p1 r1g1 r2p2 r2g2 bc
-Xr2c3 r1p3 r1g3 r1p1 r1g1 r2p3 r2g3 bc
+Xr2c2 p2 g2 r1g1 r2g2 gc
+Xr2c3 r1p3 r1g3 r1g1 r2g3 gc
 
 Xr2c6 p6 g6 r1p5 r1g5 r2p6 r2g6 bc
 Xr2c7 r1p7 r1g7 r1p5 r1g5 r2p7 r2g7 bc
@@ -89,10 +89,10 @@ Xr2c31 r1p31 r1g31 r1p29 r1g29 r2p31 r2g31 bc
 
 
 * row 3
-Xr3c4 p4 g4 r2p3 r2g3 r3p4 r3g4 bc
-Xr3c5 r1p5 r1g5 r2p3 r2g3 r3p5 r3g5 bc
-Xr3c6 r2p6 r2g6 r2p3 r2g3 r3p6 r3g6 bc
-Xr3c7 r2p7 r2g7 r2p3 r2g3 r3p7 r3g7 bc
+Xr3c4 p4 g4 r2g3 r3g4 gc
+Xr3c5 r1p5 r1g5 r2g3 r3g5 gc
+Xr3c6 r2p6 r2g6 r2g3 r3g6 gc
+Xr3c7 r2p7 r2g7 r2g3 r3g7 gc
 Xr3c12 p12 g12 r2p11 r2g11 r3p12 r3g12 bc
 Xr3c13 r1p13 r1g13 r2p11 r2g11 r3p13 r3g13 bc
 Xr3c14 r2p14 r2g14 r2p11 r2g11 r3p14 r3g14 bc
@@ -109,14 +109,14 @@ Xr3c31 r2p31 r2g31 r2p27 r2g27 r3p31 r3g31 bc
 
 
 * row 4
-Xr4c8 p8 g8 r3p7 r3g7 r4p8 r4g8 bc
-Xr4c9 r1p9 r1g9 r3p7 r3g7 r4p9 r4g9 bc
-Xr4c10 r2p10 r2g10 r3p7 r3g7 r4p10 r4g10 bc
-Xr4c11 r2p11 r2g11 r3p7 r3g7 r4p11 r4g11 bc
-Xr4c12 r3p12 r3g12 r3p7 r3g7 r4p12 r4g12 bc
-Xr4c13 r3p13 r3g13 r3p7 r3g7 r4p13 r4g13 bc
-Xr4c14 r3p14 r3g14 r3p7 r3g7 r4p14 r4g14 bc
-Xr4c15 r3p15 r3g15 r3p7 r3g7 r4p15 r4g15 bc
+Xr4c8 p8 g8 r3g7 r4g8 gc
+Xr4c9 r1p9 r1g9 r3g7 r4g9 gc
+Xr4c10 r2p10 r2g10 r3g7 r4g10 gc
+Xr4c11 r2p11 r2g11 r3g7 r4g11 gc
+Xr4c12 r3p12 r3g12 r3g7 r4g12 gc
+Xr4c13 r3p13 r3g13 r3g7 r4g13 gc
+Xr4c14 r3p14 r3g14 r3g7 r4g14 gc
+Xr4c15 r3p15 r3g15 r3g7 r4g15 gc
 Xr4c24 p24 g24 r3p23 r3g23 r4p24 r4g24 bc
 Xr4c25 r1p25 r1g25 r3p23 r3g23 r4p25 r4g25 bc
 Xr4c26 r2p26 r2g26 r3p23 r3g23 r4p26 r4g26 bc
@@ -128,22 +128,22 @@ Xr4c31 r3p31 r3g31 r3p23 r3g23 r4p31 r4g31 bc
 
 
 * row 5
-Xr5c16 p16 g16 r4p15 r4g15 r5p16 r5g16 bc
-Xr5c17 r1p17 r1g17 r4p15 r4g15 r5p17 r5g17 bc
-Xr5c18 r2p18 r2g18 r4p15 r4g15 r5p18 r5g18 bc
-Xr5c19 r2p19 r2g19 r4p15 r4g15 r5p19 r5g19 bc
-Xr5c20 r3p20 r3g20 r4p15 r4g15 r5p20 r5g20 bc
-Xr5c21 r3p21 r3g21 r4p15 r4g15 r5p21 r5g21 bc
-Xr5c22 r3p22 r3g22 r4p15 r4g15 r5p22 r5g22 bc
-Xr5c23 r3p23 r3g23 r4p15 r4g15 r5p23 r5g23 bc
-Xr5c24 r4p24 r4g24 r4p15 r4g15 r5p24 r5g24 bc
-Xr5c25 r4p25 r4g25 r4p15 r4g15 r5p25 r5g25 bc
-Xr5c26 r4p26 r4g26 r4p15 r4g15 r5p26 r5g26 bc
-Xr5c27 r4p27 r4g27 r4p15 r4g15 r5p27 r5g27 bc
-Xr5c28 r4p28 r4g28 r4p15 r4g15 r5p28 r5g28 bc
-Xr5c29 r4p29 r4g29 r4p15 r4g15 r5p29 r5g29 bc
-Xr5c30 r4p30 r4g30 r4p15 r4g15 r5p30 r5g30 bc
-Xr5c31 r4p31 r4g31 r4p15 r4g15 r5p31 r5g31 bc
+Xr5c16 p16 g16 r4g15 r5g16 gc
+Xr5c17 r1p17 r1g17 r4g15 r5g17 gc
+Xr5c18 r2p18 r2g18 r4g15 r5g18 gc
+Xr5c19 r2p19 r2g19 r4g15 r5g19 gc
+Xr5c20 r3p20 r3g20 r4g15 r5g20 gc
+Xr5c21 r3p21 r3g21 r4g15 r5g21 gc
+Xr5c22 r3p22 r3g22 r4g15 r5g22 gc
+Xr5c23 r3p23 r3g23 r4g15 r5g23 gc
+Xr5c24 r4p24 r4g24 r4g15 r5g24 gc
+Xr5c25 r4p25 r4g25 r4g15 r5g25 gc
+Xr5c26 r4p26 r4g26 r4g15 r5g26 gc
+Xr5c27 r4p27 r4g27 r4g15 r5g27 gc
+Xr5c28 r4p28 r4g28 r4g15 r5g28 gc
+Xr5c29 r4p29 r4g29 r4g15 r5g29 gc
+Xr5c30 r4p30 r4g30 r4g15 r5g30 gc
+* Xr5c31 r4p31 r4g31 r4p15 r4g15 r5p31 r5g31 bc
 
 
 Xsum0 p0 op0 s0 xor2
@@ -166,7 +166,7 @@ Xsum16 p16 r4g15 s16 xor2
 Xsum17 p17 r5g16 s17 xor2
 Xsum18 p18 r5g17 s18 xor2
 Xsum19 p19 r5g18 s19 xor2
-Xsum20 p0 r5g19 s20 xor2
+Xsum20 p20 r5g19 s20 xor2
 Xsum21 p21 r5g20 s21 xor2
 Xsum22 p22 r5g21 s22 xor2
 Xsum23 p23 r5g22 s23 xor2
@@ -181,16 +181,17 @@ Xsum31 p31 r5g30 s31 xor2
 
 * generate z
 XZorCascade s[7:0] s[15:8] s[23:16] s[31:24] w[7:0] nor4
-X4AndCascade w[7:4] w[3:0] int[3:0] and2
-XFinalZ int3 int2 int1 int0 z and4
+X4AndCascade w[7:6] w[5:4] w[3:2] w[1:0] int[1:0] nand4
+XFinalZ int1 int0 z nor2
+//Nor nand nor
 
 * generate v
 XnotS31 s31 ns31 inverter
-XVckt1 a31 xb31 ns31 vp1 and3
 XnotA31 a31 na31 inverter
 XnotXB31 xb31 nxb31 inverter
-XVckt2 na31 nxb31 s31 vp2 and3
-XVckt vp1 vp2 v or2
+XVckt1 a31 xb31 ns31 vp1 nand3
+XVckt2 na31 nxb31 s31 vp2 nand3
+XVckt vp1 vp2 v nand2
 
 * generate n
 .connect s31 n
