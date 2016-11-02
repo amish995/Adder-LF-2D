@@ -166,7 +166,7 @@ Xsum16 p16 r4g15 s16 xor2
 Xsum17 p17 r5g16 s17 xor2
 Xsum18 p18 r5g17 s18 xor2
 Xsum19 p19 r5g18 s19 xor2
-Xsum20 p0 r5g19 s20 xor2
+Xsum20 p20 r5g19 s20 xor2
 Xsum21 p21 r5g20 s21 xor2
 Xsum22 p22 r5g21 s22 xor2
 Xsum23 p23 r5g22 s23 xor2
