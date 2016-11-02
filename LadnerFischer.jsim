@@ -185,8 +185,8 @@ Xsum31 p31 r5g30 s31 xor2
 
 * generate z
 XZorCascade s[7:0] s[15:8] s[23:16] s[31:24] w[7:0] nor4
-X4AndCascade w[7:4] w[3:0] int[3:0] and2
-XFinalZ int3 int2 int1 int0 z and4
+X4AndCascade w[7:4] w[3:0] int[3:0] nand2
+XFinalZ int3 int2 int1 int0 z nor4
 
 * generate v
 XnotS31 s31 ns31 inverter
