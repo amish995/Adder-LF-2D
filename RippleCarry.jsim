@@ -1,0 +1,37 @@
+.include "nominal.jsim"
+.include "stdcell.jsim"
+.include "2dcheckoff_100ns.jsim"
+
+
+.subckt fa A B Cin S Cout
+Xxor_s1 A B XS1 xor2
+Xxor_s2 XS1 Cin S xor2
+Xnand_c1 A B XC1 nand2
+Xnand_c2 A Cin XC2 nand2
+Xnand_c3 B Cin XC3 nand2
+Xnor_c3 XC1 XC2 XC3 Cout nand3
+.ends
+
+
+.subckt adder32 ALUFN0 A[31:0] B[31:0] s[31:0] z v n
+Xxor B[31:0] ALUFN0#32 XB[31:0] xor2
+//Xadder0 A[0] XB[0] ALUFN0 S[0] C[0] fa
+.connect ALUFN0 C[0]
+Xadder32 A[31:0] XB[31:0] C[31:0] S[31:0] C[32:1] fa
+
+//Or FAN, tpd = .12 + .16 + .12
+Xnor_x8 S[31:24] S[23:16] S[15:8] S[7:0] n8_nor[7:0] nor4
+Xand_x2 n8_nor[7:6] n8_nor[5:4] n8_nor[3:2] n8_nor[1:0] n2_and[1:0] and4
+Xand_x1 n2_and[1] n2_and[0] z and2
+
+// Calculate V
+XnotA31 A[31] not_A inverter
+XnotXB31 XB[31] not_B inverter
+XnotS31 S[31] not_S inverter
+Xand1_v A[31] XB[31] not_s v1 nand3
+Xand2_v not_A not_B S[31] v2 nand3
+Xnand_v v1 v2 v nand2
+
+// Negative? Calc N.
+.connect S[31] n
+.ends
