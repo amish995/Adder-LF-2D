@@ -1,0 +1,565 @@
+Timing analysis for C:\Users\johsi\Documents\Adder-LF-2D\KoggeStone_buffered_fan.jsim at Thu Nov 03 21:57:13 SGT 2016
+
+==================================================================
+
+Worst-case tPDs from clk to top-level outputs:
+
+
+  tPD from clk to xs23 (0.190ns):
+
+    + 0.000ns = 0.000ns clk [vclk]
+    + 0.190ns = 0.190ns xs23 [xtestadder.xregoutxs#8.xdreg]
+
+  tPD from clk to xs7 (0.190ns):
+
+    + 0.000ns = 0.000ns clk [vclk]
+    + 0.190ns = 0.190ns xs7 [xtestadder.xregoutxs#24.xdreg]
+
+  tPD from clk to xs20 (0.190ns):
+
+    + 0.000ns = 0.000ns clk [vclk]
+    + 0.190ns = 0.190ns xs20 [xtestadder.xregoutxs#11.xdreg]
+
+  tPD from clk to xs21 (0.190ns):
+
+    + 0.000ns = 0.000ns clk [vclk]
+    + 0.190ns = 0.190ns xs21 [xtestadder.xregoutxs#10.xdreg]
+
+  tPD from clk to xs22 (0.190ns):
+
+    + 0.000ns = 0.000ns clk [vclk]
+    + 0.190ns = 0.190ns xs22 [xtestadder.xregoutxs#9.xdreg]
+
+  tPD from clk to xs24 (0.190ns):
+
+    + 0.000ns = 0.000ns clk [vclk]
+    + 0.190ns = 0.190ns xs24 [xtestadder.xregoutxs#7.xdreg]
+
+  tPD from clk to xs25 (0.190ns):
+
+    + 0.000ns = 0.000ns clk [vclk]
+    + 0.190ns = 0.190ns xs25 [xtestadder.xregoutxs#6.xdreg]
+
+  tPD from clk to xs26 (0.190ns):
+
+    + 0.000ns = 0.000ns clk [vclk]
+    + 0.190ns = 0.190ns xs26 [xtestadder.xregoutxs#5.xdreg]
+
+  tPD from clk to xs16 (0.190ns):
+
+    + 0.000ns = 0.000ns clk [vclk]
+    + 0.190ns = 0.190ns xs16 [xtestadder.xregoutxs#15.xdreg]
+
+  tPD from clk to xs17 (0.190ns):
+
+    + 0.000ns = 0.000ns clk [vclk]
+    + 0.190ns = 0.190ns xs17 [xtestadder.xregoutxs#14.xdreg]
+
+==================================================================
+
+Hold time violations for clk:
+
+  tCD from xb31 to xb31 violates hold time by -0.025ns:
+
+    + 0.000ns = 0.000ns xb31 [wb#0]
+    - 0.025ns = -0.025ns clk [xtestadder.xreginxb#0.xdreg]
+
+  tCD from xb30 to xb30 violates hold time by -0.025ns:
+
+    + 0.000ns = 0.000ns xb30 [wb#1]
+    - 0.025ns = -0.025ns clk [xtestadder.xreginxb#1.xdreg]
+
+  tCD from xb29 to xb29 violates hold time by -0.025ns:
+
+    + 0.000ns = 0.000ns xb29 [wb#2]
+    - 0.025ns = -0.025ns clk [xtestadder.xreginxb#2.xdreg]
+
+  tCD from xb28 to xb28 violates hold time by -0.025ns:
+
+    + 0.000ns = 0.000ns xb28 [wb#3]
+    - 0.025ns = -0.025ns clk [xtestadder.xreginxb#3.xdreg]
+
+  tCD from xb27 to xb27 violates hold time by -0.025ns:
+
+    + 0.000ns = 0.000ns xb27 [wb#4]
+    - 0.025ns = -0.025ns clk [xtestadder.xreginxb#4.xdreg]
+
+  tCD from xb26 to xb26 violates hold time by -0.025ns:
+
+    + 0.000ns = 0.000ns xb26 [wb#5]
+    - 0.025ns = -0.025ns clk [xtestadder.xreginxb#5.xdreg]
+
+  tCD from xb25 to xb25 violates hold time by -0.025ns:
+
+    + 0.000ns = 0.000ns xb25 [wb#6]
+    - 0.025ns = -0.025ns clk [xtestadder.xreginxb#6.xdreg]
+
+  tCD from xb24 to xb24 violates hold time by -0.025ns:
+
+    + 0.000ns = 0.000ns xb24 [wb#7]
+    - 0.025ns = -0.025ns clk [xtestadder.xreginxb#7.xdreg]
+
+  tCD from xb23 to xb23 violates hold time by -0.025ns:
+
+    + 0.000ns = 0.000ns xb23 [wb#8]
+    - 0.025ns = -0.025ns clk [xtestadder.xreginxb#8.xdreg]
+
+  tCD from xb22 to xb22 violates hold time by -0.025ns:
+
+    + 0.000ns = 0.000ns xb22 [wb#9]
+    - 0.025ns = -0.025ns clk [xtestadder.xreginxb#9.xdreg]
+
+  tCD from xb21 to xb21 violates hold time by -0.025ns:
+
+    + 0.000ns = 0.000ns xb21 [wb#10]
+    - 0.025ns = -0.025ns clk [xtestadder.xreginxb#10.xdreg]
+
+  tCD from xb20 to xb20 violates hold time by -0.025ns:
+
+    + 0.000ns = 0.000ns xb20 [wb#11]
+    - 0.025ns = -0.025ns clk [xtestadder.xreginxb#11.xdreg]
+
+  tCD from xb19 to xb19 violates hold time by -0.025ns:
+
+    + 0.000ns = 0.000ns xb19 [wb#12]
+    - 0.025ns = -0.025ns clk [xtestadder.xreginxb#12.xdreg]
+
+  tCD from xb18 to xb18 violates hold time by -0.025ns:
+
+    + 0.000ns = 0.000ns xb18 [wb#13]
+    - 0.025ns = -0.025ns clk [xtestadder.xreginxb#13.xdreg]
+
+  tCD from xb17 to xb17 violates hold time by -0.025ns:
+
+    + 0.000ns = 0.000ns xb17 [wb#14]
+    - 0.025ns = -0.025ns clk [xtestadder.xreginxb#14.xdreg]
+
+  tCD from xb16 to xb16 violates hold time by -0.025ns:
+
+    + 0.000ns = 0.000ns xb16 [wb#15]
+    - 0.025ns = -0.025ns clk [xtestadder.xreginxb#15.xdreg]
+
+  tCD from xb15 to xb15 violates hold time by -0.025ns:
+
+    + 0.000ns = 0.000ns xb15 [wb#16]
+    - 0.025ns = -0.025ns clk [xtestadder.xreginxb#16.xdreg]
+
+  tCD from xb14 to xb14 violates hold time by -0.025ns:
+
+    + 0.000ns = 0.000ns xb14 [wb#17]
+    - 0.025ns = -0.025ns clk [xtestadder.xreginxb#17.xdreg]
+
+  tCD from xb13 to xb13 violates hold time by -0.025ns:
+
+    + 0.000ns = 0.000ns xb13 [wb#18]
+    - 0.025ns = -0.025ns clk [xtestadder.xreginxb#18.xdreg]
+
+  tCD from xb12 to xb12 violates hold time by -0.025ns:
+
+    + 0.000ns = 0.000ns xb12 [wb#19]
+    - 0.025ns = -0.025ns clk [xtestadder.xreginxb#19.xdreg]
+
+  tCD from xb11 to xb11 violates hold time by -0.025ns:
+
+    + 0.000ns = 0.000ns xb11 [wb#20]
+    - 0.025ns = -0.025ns clk [xtestadder.xreginxb#20.xdreg]
+
+  tCD from xb10 to xb10 violates hold time by -0.025ns:
+
+    + 0.000ns = 0.000ns xb10 [wb#21]
+    - 0.025ns = -0.025ns clk [xtestadder.xreginxb#21.xdreg]
+
+  tCD from xb9 to xb9 violates hold time by -0.025ns:
+
+    + 0.000ns = 0.000ns xb9 [wb#22]
+    - 0.025ns = -0.025ns clk [xtestadder.xreginxb#22.xdreg]
+
+  tCD from xb8 to xb8 violates hold time by -0.025ns:
+
+    + 0.000ns = 0.000ns xb8 [wb#23]
+    - 0.025ns = -0.025ns clk [xtestadder.xreginxb#23.xdreg]
+
+  tCD from xb7 to xb7 violates hold time by -0.025ns:
+
+    + 0.000ns = 0.000ns xb7 [wb#24]
+    - 0.025ns = -0.025ns clk [xtestadder.xreginxb#24.xdreg]
+
+  tCD from xb6 to xb6 violates hold time by -0.025ns:
+
+    + 0.000ns = 0.000ns xb6 [wb#25]
+    - 0.025ns = -0.025ns clk [xtestadder.xreginxb#25.xdreg]
+
+  tCD from xb5 to xb5 violates hold time by -0.025ns:
+
+    + 0.000ns = 0.000ns xb5 [wb#26]
+    - 0.025ns = -0.025ns clk [xtestadder.xreginxb#26.xdreg]
+
+  tCD from xb4 to xb4 violates hold time by -0.025ns:
+
+    + 0.000ns = 0.000ns xb4 [wb#27]
+    - 0.025ns = -0.025ns clk [xtestadder.xreginxb#27.xdreg]
+
+  tCD from xb3 to xb3 violates hold time by -0.025ns:
+
+    + 0.000ns = 0.000ns xb3 [wb#28]
+    - 0.025ns = -0.025ns clk [xtestadder.xreginxb#28.xdreg]
+
+  tCD from xb2 to xb2 violates hold time by -0.025ns:
+
+    + 0.000ns = 0.000ns xb2 [wb#29]
+    - 0.025ns = -0.025ns clk [xtestadder.xreginxb#29.xdreg]
+
+  tCD from xb1 to xb1 violates hold time by -0.025ns:
+
+    + 0.000ns = 0.000ns xb1 [wb#30]
+    - 0.025ns = -0.025ns clk [xtestadder.xreginxb#30.xdreg]
+
+  tCD from xb0 to xb0 violates hold time by -0.025ns:
+
+    + 0.000ns = 0.000ns xb0 [wb#31]
+    - 0.025ns = -0.025ns clk [xtestadder.xreginxb#31.xdreg]
+
+  tCD from xa31 to xa31 violates hold time by -0.025ns:
+
+    + 0.000ns = 0.000ns xa31 [wa#0]
+    - 0.025ns = -0.025ns clk [xtestadder.xreginxa#0.xdreg]
+
+  tCD from xa30 to xa30 violates hold time by -0.025ns:
+
+    + 0.000ns = 0.000ns xa30 [wa#1]
+    - 0.025ns = -0.025ns clk [xtestadder.xreginxa#1.xdreg]
+
+  tCD from xa29 to xa29 violates hold time by -0.025ns:
+
+    + 0.000ns = 0.000ns xa29 [wa#2]
+    - 0.025ns = -0.025ns clk [xtestadder.xreginxa#2.xdreg]
+
+  tCD from xa28 to xa28 violates hold time by -0.025ns:
+
+    + 0.000ns = 0.000ns xa28 [wa#3]
+    - 0.025ns = -0.025ns clk [xtestadder.xreginxa#3.xdreg]
+
+  tCD from xa27 to xa27 violates hold time by -0.025ns:
+
+    + 0.000ns = 0.000ns xa27 [wa#4]
+    - 0.025ns = -0.025ns clk [xtestadder.xreginxa#4.xdreg]
+
+  tCD from xa26 to xa26 violates hold time by -0.025ns:
+
+    + 0.000ns = 0.000ns xa26 [wa#5]
+    - 0.025ns = -0.025ns clk [xtestadder.xreginxa#5.xdreg]
+
+  tCD from xa25 to xa25 violates hold time by -0.025ns:
+
+    + 0.000ns = 0.000ns xa25 [wa#6]
+    - 0.025ns = -0.025ns clk [xtestadder.xreginxa#6.xdreg]
+
+  tCD from xa24 to xa24 violates hold time by -0.025ns:
+
+    + 0.000ns = 0.000ns xa24 [wa#7]
+    - 0.025ns = -0.025ns clk [xtestadder.xreginxa#7.xdreg]
+
+  tCD from xa23 to xa23 violates hold time by -0.025ns:
+
+    + 0.000ns = 0.000ns xa23 [wa#8]
+    - 0.025ns = -0.025ns clk [xtestadder.xreginxa#8.xdreg]
+
+  tCD from xa22 to xa22 violates hold time by -0.025ns:
+
+    + 0.000ns = 0.000ns xa22 [wa#9]
+    - 0.025ns = -0.025ns clk [xtestadder.xreginxa#9.xdreg]
+
+  tCD from xa21 to xa21 violates hold time by -0.025ns:
+
+    + 0.000ns = 0.000ns xa21 [wa#10]
+    - 0.025ns = -0.025ns clk [xtestadder.xreginxa#10.xdreg]
+
+  tCD from xa20 to xa20 violates hold time by -0.025ns:
+
+    + 0.000ns = 0.000ns xa20 [wa#11]
+    - 0.025ns = -0.025ns clk [xtestadder.xreginxa#11.xdreg]
+
+  tCD from xa19 to xa19 violates hold time by -0.025ns:
+
+    + 0.000ns = 0.000ns xa19 [wa#12]
+    - 0.025ns = -0.025ns clk [xtestadder.xreginxa#12.xdreg]
+
+  tCD from xa18 to xa18 violates hold time by -0.025ns:
+
+    + 0.000ns = 0.000ns xa18 [wa#13]
+    - 0.025ns = -0.025ns clk [xtestadder.xreginxa#13.xdreg]
+
+  tCD from xa17 to xa17 violates hold time by -0.025ns:
+
+    + 0.000ns = 0.000ns xa17 [wa#14]
+    - 0.025ns = -0.025ns clk [xtestadder.xreginxa#14.xdreg]
+
+  tCD from xa16 to xa16 violates hold time by -0.025ns:
+
+    + 0.000ns = 0.000ns xa16 [wa#15]
+    - 0.025ns = -0.025ns clk [xtestadder.xreginxa#15.xdreg]
+
+  tCD from xa15 to xa15 violates hold time by -0.025ns:
+
+    + 0.000ns = 0.000ns xa15 [wa#16]
+    - 0.025ns = -0.025ns clk [xtestadder.xreginxa#16.xdreg]
+
+  tCD from xa14 to xa14 violates hold time by -0.025ns:
+
+    + 0.000ns = 0.000ns xa14 [wa#17]
+    - 0.025ns = -0.025ns clk [xtestadder.xreginxa#17.xdreg]
+
+  tCD from xa13 to xa13 violates hold time by -0.025ns:
+
+    + 0.000ns = 0.000ns xa13 [wa#18]
+    - 0.025ns = -0.025ns clk [xtestadder.xreginxa#18.xdreg]
+
+  tCD from xa12 to xa12 violates hold time by -0.025ns:
+
+    + 0.000ns = 0.000ns xa12 [wa#19]
+    - 0.025ns = -0.025ns clk [xtestadder.xreginxa#19.xdreg]
+
+  tCD from xa11 to xa11 violates hold time by -0.025ns:
+
+    + 0.000ns = 0.000ns xa11 [wa#20]
+    - 0.025ns = -0.025ns clk [xtestadder.xreginxa#20.xdreg]
+
+  tCD from xa10 to xa10 violates hold time by -0.025ns:
+
+    + 0.000ns = 0.000ns xa10 [wa#21]
+    - 0.025ns = -0.025ns clk [xtestadder.xreginxa#21.xdreg]
+
+  tCD from xa9 to xa9 violates hold time by -0.025ns:
+
+    + 0.000ns = 0.000ns xa9 [wa#22]
+    - 0.025ns = -0.025ns clk [xtestadder.xreginxa#22.xdreg]
+
+  tCD from xa8 to xa8 violates hold time by -0.025ns:
+
+    + 0.000ns = 0.000ns xa8 [wa#23]
+    - 0.025ns = -0.025ns clk [xtestadder.xreginxa#23.xdreg]
+
+  tCD from xa7 to xa7 violates hold time by -0.025ns:
+
+    + 0.000ns = 0.000ns xa7 [wa#24]
+    - 0.025ns = -0.025ns clk [xtestadder.xreginxa#24.xdreg]
+
+  tCD from xa6 to xa6 violates hold time by -0.025ns:
+
+    + 0.000ns = 0.000ns xa6 [wa#25]
+    - 0.025ns = -0.025ns clk [xtestadder.xreginxa#25.xdreg]
+
+  tCD from xa5 to xa5 violates hold time by -0.025ns:
+
+    + 0.000ns = 0.000ns xa5 [wa#26]
+    - 0.025ns = -0.025ns clk [xtestadder.xreginxa#26.xdreg]
+
+  tCD from xa4 to xa4 violates hold time by -0.025ns:
+
+    + 0.000ns = 0.000ns xa4 [wa#27]
+    - 0.025ns = -0.025ns clk [xtestadder.xreginxa#27.xdreg]
+
+  tCD from xa3 to xa3 violates hold time by -0.025ns:
+
+    + 0.000ns = 0.000ns xa3 [wa#28]
+    - 0.025ns = -0.025ns clk [xtestadder.xreginxa#28.xdreg]
+
+  tCD from xa2 to xa2 violates hold time by -0.025ns:
+
+    + 0.000ns = 0.000ns xa2 [wa#29]
+    - 0.025ns = -0.025ns clk [xtestadder.xreginxa#29.xdreg]
+
+  tCD from xa1 to xa1 violates hold time by -0.025ns:
+
+    + 0.000ns = 0.000ns xa1 [wa#30]
+    - 0.025ns = -0.025ns clk [xtestadder.xreginxa#30.xdreg]
+
+  tCD from xa0 to xa0 violates hold time by -0.025ns:
+
+    + 0.000ns = 0.000ns xa0 [wa#31]
+    - 0.025ns = -0.025ns clk [xtestadder.xreginxa#31.xdreg]
+
+  tCD from xop0 to xop0 violates hold time by -0.025ns:
+
+    + 0.000ns = 0.000ns xop0 [wo#0]
+    - 0.025ns = -0.025ns clk [xtestadder.xreginxop.xdreg]
+
+==================================================================
+
+Minimum cycle time for clk is 2.303ns:
+
+  tPD from clk to xtestadder.z (2.303ns):
+
+    + 0.000ns = 0.000ns clk [vclk]
+    + 0.246ns = 0.246ns xtestadder.op0 [xtestadder.xreginxop.xdreg]
+    + 0.052ns = 0.298ns xtestadder.xadder.opmid [xtestadder.xadder.xinvop0.xinverter]
+    + 0.213ns = 0.511ns xtestadder.xadder.op1 [xtestadder.xadder.xinvopmid1.xinverter]
+    + 0.156ns = 0.667ns xtestadder.xadder.xb15 [xtestadder.xadder.xselba#0.xmux2]
+    + 0.203ns = 0.870ns xtestadder.xadder.p15 [xtestadder.xadder.xgenpandg#16.xgenp.xxor2]
+    + 0.156ns = 1.026ns xtestadder.xadder.r1p16 [xtestadder.xadder.xr1#15.xand.xand2]
+    + 0.156ns = 1.182ns xtestadder.xadder.r2p18 [xtestadder.xadder.xr2#13.xand.xand2]
+    + 0.156ns = 1.338ns xtestadder.xadder.r3p22 [xtestadder.xadder.xr3#9.xand.xand2]
+    + 0.138ns = 1.476ns xtestadder.xadder.r4p30 [xtestadder.xadder.xr4#1.xand.xand2]
+    + 0.048ns = 1.524ns xtestadder.xadder.xr5#1.n_pi_gj [xtestadder.xadder.xr5#1.xnand1.xnand2]
+    + 0.057ns = 1.581ns xtestadder.xadder.r5g30 [xtestadder.xadder.xr5#1.xnand2.xnand2]
+    + 0.217ns = 1.798ns xtestadder.s31 [xtestadder.xadder.xsum#0.xxor2]
+    + 0.167ns = 1.965ns xtestadder.xadder.w7 [xtestadder.xadder.xzorcascade#0.xnor4]
+    + 0.088ns = 2.053ns xtestadder.xadder.int1 [xtestadder.xadder.x4andcascade#0.xnand4]
+    + 0.050ns = 2.103ns xtestadder.z [xtestadder.xadder.xfinalz.xnor2]
+    + 0.200ns = 2.303ns clk [xtestadder.xregoutxz.xdreg]
+
+  tPD from clk to xtestadder.v (2.126ns):
+
+    + 0.000ns = 0.000ns clk [vclk]
+    + 0.246ns = 0.246ns xtestadder.op0 [xtestadder.xreginxop.xdreg]
+    + 0.052ns = 0.298ns xtestadder.xadder.opmid [xtestadder.xadder.xinvop0.xinverter]
+    + 0.213ns = 0.511ns xtestadder.xadder.op1 [xtestadder.xadder.xinvopmid1.xinverter]
+    + 0.156ns = 0.667ns xtestadder.xadder.xb15 [xtestadder.xadder.xselba#0.xmux2]
+    + 0.203ns = 0.870ns xtestadder.xadder.p15 [xtestadder.xadder.xgenpandg#16.xgenp.xxor2]
+    + 0.156ns = 1.026ns xtestadder.xadder.r1p16 [xtestadder.xadder.xr1#15.xand.xand2]
+    + 0.156ns = 1.182ns xtestadder.xadder.r2p18 [xtestadder.xadder.xr2#13.xand.xand2]
+    + 0.156ns = 1.338ns xtestadder.xadder.r3p22 [xtestadder.xadder.xr3#9.xand.xand2]
+    + 0.138ns = 1.476ns xtestadder.xadder.r4p30 [xtestadder.xadder.xr4#1.xand.xand2]
+    + 0.048ns = 1.524ns xtestadder.xadder.xr5#1.n_pi_gj [xtestadder.xadder.xr5#1.xnand1.xnand2]
+    + 0.057ns = 1.581ns xtestadder.xadder.r5g30 [xtestadder.xadder.xr5#1.xnand2.xnand2]
+    + 0.217ns = 1.798ns xtestadder.s31 [xtestadder.xadder.xsum#0.xxor2]
+    + 0.032ns = 1.829ns xtestadder.xadder.ns31 [xtestadder.xadder.xnots31.xinverter]
+    + 0.067ns = 1.896ns xtestadder.xadder.vp1 [xtestadder.xadder.xvckt1.xnand3]
+    + 0.030ns = 1.926ns xtestadder.v [xtestadder.xadder.xvckt.xnand2]
+    + 0.200ns = 2.126ns clk [xtestadder.xregoutxv.xdreg]
+
+  tPD from clk to xtestadder.s31 (1.998ns):
+
+    + 0.000ns = 0.000ns clk [vclk]
+    + 0.246ns = 0.246ns xtestadder.op0 [xtestadder.xreginxop.xdreg]
+    + 0.052ns = 0.298ns xtestadder.xadder.opmid [xtestadder.xadder.xinvop0.xinverter]
+    + 0.213ns = 0.511ns xtestadder.xadder.op1 [xtestadder.xadder.xinvopmid1.xinverter]
+    + 0.156ns = 0.667ns xtestadder.xadder.xb15 [xtestadder.xadder.xselba#0.xmux2]
+    + 0.203ns = 0.870ns xtestadder.xadder.p15 [xtestadder.xadder.xgenpandg#16.xgenp.xxor2]
+    + 0.156ns = 1.026ns xtestadder.xadder.r1p16 [xtestadder.xadder.xr1#15.xand.xand2]
+    + 0.156ns = 1.182ns xtestadder.xadder.r2p18 [xtestadder.xadder.xr2#13.xand.xand2]
+    + 0.156ns = 1.338ns xtestadder.xadder.r3p22 [xtestadder.xadder.xr3#9.xand.xand2]
+    + 0.138ns = 1.476ns xtestadder.xadder.r4p30 [xtestadder.xadder.xr4#1.xand.xand2]
+    + 0.048ns = 1.524ns xtestadder.xadder.xr5#1.n_pi_gj [xtestadder.xadder.xr5#1.xnand1.xnand2]
+    + 0.057ns = 1.581ns xtestadder.xadder.r5g30 [xtestadder.xadder.xr5#1.xnand2.xnand2]
+    + 0.217ns = 1.798ns xtestadder.s31 [xtestadder.xadder.xsum#0.xxor2]
+    + 0.200ns = 1.998ns clk [xtestadder.xregoutxs#0.xdreg]
+
+  tPD from clk to xtestadder.s31 (1.998ns):
+
+    + 0.000ns = 0.000ns clk [vclk]
+    + 0.246ns = 0.246ns xtestadder.op0 [xtestadder.xreginxop.xdreg]
+    + 0.052ns = 0.298ns xtestadder.xadder.opmid [xtestadder.xadder.xinvop0.xinverter]
+    + 0.213ns = 0.511ns xtestadder.xadder.op1 [xtestadder.xadder.xinvopmid1.xinverter]
+    + 0.156ns = 0.667ns xtestadder.xadder.xb15 [xtestadder.xadder.xselba#0.xmux2]
+    + 0.203ns = 0.870ns xtestadder.xadder.p15 [xtestadder.xadder.xgenpandg#16.xgenp.xxor2]
+    + 0.156ns = 1.026ns xtestadder.xadder.r1p16 [xtestadder.xadder.xr1#15.xand.xand2]
+    + 0.156ns = 1.182ns xtestadder.xadder.r2p18 [xtestadder.xadder.xr2#13.xand.xand2]
+    + 0.156ns = 1.338ns xtestadder.xadder.r3p22 [xtestadder.xadder.xr3#9.xand.xand2]
+    + 0.138ns = 1.476ns xtestadder.xadder.r4p30 [xtestadder.xadder.xr4#1.xand.xand2]
+    + 0.048ns = 1.524ns xtestadder.xadder.xr5#1.n_pi_gj [xtestadder.xadder.xr5#1.xnand1.xnand2]
+    + 0.057ns = 1.581ns xtestadder.xadder.r5g30 [xtestadder.xadder.xr5#1.xnand2.xnand2]
+    + 0.217ns = 1.798ns xtestadder.s31 [xtestadder.xadder.xsum#0.xxor2]
+    + 0.200ns = 1.998ns clk [xtestadder.xregoutxn.xdreg]
+
+  tPD from clk to xtestadder.s30 (1.944ns):
+
+    + 0.000ns = 0.000ns clk [vclk]
+    + 0.246ns = 0.246ns xtestadder.op0 [xtestadder.xreginxop.xdreg]
+    + 0.052ns = 0.298ns xtestadder.xadder.opmid [xtestadder.xadder.xinvop0.xinverter]
+    + 0.213ns = 0.511ns xtestadder.xadder.op1 [xtestadder.xadder.xinvopmid1.xinverter]
+    + 0.156ns = 0.667ns xtestadder.xadder.xb15 [xtestadder.xadder.xselba#0.xmux2]
+    + 0.203ns = 0.870ns xtestadder.xadder.p15 [xtestadder.xadder.xgenpandg#16.xgenp.xxor2]
+    + 0.156ns = 1.026ns xtestadder.xadder.r1p15 [xtestadder.xadder.xr1#16.xand.xand2]
+    + 0.156ns = 1.182ns xtestadder.xadder.r2p17 [xtestadder.xadder.xr2#14.xand.xand2]
+    + 0.156ns = 1.338ns xtestadder.xadder.r3p21 [xtestadder.xadder.xr3#10.xand.xand2]
+    + 0.138ns = 1.476ns xtestadder.xadder.r4p29 [xtestadder.xadder.xr4#2.xand.xand2]
+    + 0.048ns = 1.524ns xtestadder.xadder.xr5#2.n_pi_gj [xtestadder.xadder.xr5#2.xnand1.xnand2]
+    + 0.057ns = 1.581ns xtestadder.xadder.r5g29 [xtestadder.xadder.xr5#2.xnand2.xnand2]
+    + 0.163ns = 1.744ns xtestadder.s30 [xtestadder.xadder.xsum#1.xxor2]
+    + 0.200ns = 1.944ns clk [xtestadder.xregoutxs#1.xdreg]
+
+  tPD from clk to xtestadder.s29 (1.944ns):
+
+    + 0.000ns = 0.000ns clk [vclk]
+    + 0.246ns = 0.246ns xtestadder.op0 [xtestadder.xreginxop.xdreg]
+    + 0.052ns = 0.298ns xtestadder.xadder.opmid [xtestadder.xadder.xinvop0.xinverter]
+    + 0.213ns = 0.511ns xtestadder.xadder.op1 [xtestadder.xadder.xinvopmid1.xinverter]
+    + 0.156ns = 0.667ns xtestadder.xadder.xb15 [xtestadder.xadder.xselba#0.xmux2]
+    + 0.203ns = 0.870ns xtestadder.xadder.p15 [xtestadder.xadder.xgenpandg#16.xgenp.xxor2]
+    + 0.156ns = 1.026ns xtestadder.xadder.r1p16 [xtestadder.xadder.xr1#15.xand.xand2]
+    + 0.156ns = 1.182ns xtestadder.xadder.r2p16 [xtestadder.xadder.xr2#15.xand.xand2]
+    + 0.156ns = 1.338ns xtestadder.xadder.r3p20 [xtestadder.xadder.xr3#11.xand.xand2]
+    + 0.138ns = 1.476ns xtestadder.xadder.r4p28 [xtestadder.xadder.xr4#3.xand.xand2]
+    + 0.048ns = 1.524ns xtestadder.xadder.xr5#3.n_pi_gj [xtestadder.xadder.xr5#3.xnand1.xnand2]
+    + 0.057ns = 1.581ns xtestadder.xadder.r5g28 [xtestadder.xadder.xr5#3.xnand2.xnand2]
+    + 0.163ns = 1.744ns xtestadder.s29 [xtestadder.xadder.xsum#2.xxor2]
+    + 0.200ns = 1.944ns clk [xtestadder.xregoutxs#2.xdreg]
+
+  tPD from clk to xtestadder.s28 (1.944ns):
+
+    + 0.000ns = 0.000ns clk [vclk]
+    + 0.246ns = 0.246ns xtestadder.op0 [xtestadder.xreginxop.xdreg]
+    + 0.052ns = 0.298ns xtestadder.xadder.opmid [xtestadder.xadder.xinvop0.xinverter]
+    + 0.213ns = 0.511ns xtestadder.xadder.op1 [xtestadder.xadder.xinvopmid1.xinverter]
+    + 0.156ns = 0.667ns xtestadder.xadder.xb15 [xtestadder.xadder.xselba#0.xmux2]
+    + 0.203ns = 0.870ns xtestadder.xadder.p15 [xtestadder.xadder.xgenpandg#16.xgenp.xxor2]
+    + 0.156ns = 1.026ns xtestadder.xadder.r1p15 [xtestadder.xadder.xr1#16.xand.xand2]
+    + 0.156ns = 1.182ns xtestadder.xadder.r2p15 [xtestadder.xadder.xr2#16.xand.xand2]
+    + 0.156ns = 1.338ns xtestadder.xadder.r3p19 [xtestadder.xadder.xr3#12.xand.xand2]
+    + 0.138ns = 1.476ns xtestadder.xadder.r4p27 [xtestadder.xadder.xr4#4.xand.xand2]
+    + 0.048ns = 1.524ns xtestadder.xadder.xr5#4.n_pi_gj [xtestadder.xadder.xr5#4.xnand1.xnand2]
+    + 0.057ns = 1.581ns xtestadder.xadder.r5g27 [xtestadder.xadder.xr5#4.xnand2.xnand2]
+    + 0.163ns = 1.744ns xtestadder.s28 [xtestadder.xadder.xsum#3.xxor2]
+    + 0.200ns = 1.944ns clk [xtestadder.xregoutxs#3.xdreg]
+
+  tPD from clk to xtestadder.s27 (1.944ns):
+
+    + 0.000ns = 0.000ns clk [vclk]
+    + 0.246ns = 0.246ns xtestadder.op0 [xtestadder.xreginxop.xdreg]
+    + 0.052ns = 0.298ns xtestadder.xadder.opmid [xtestadder.xadder.xinvop0.xinverter]
+    + 0.213ns = 0.511ns xtestadder.xadder.op1 [xtestadder.xadder.xinvopmid1.xinverter]
+    + 0.156ns = 0.667ns xtestadder.xadder.xb15 [xtestadder.xadder.xselba#0.xmux2]
+    + 0.203ns = 0.870ns xtestadder.xadder.p15 [xtestadder.xadder.xgenpandg#16.xgenp.xxor2]
+    + 0.156ns = 1.026ns xtestadder.xadder.r1p16 [xtestadder.xadder.xr1#15.xand.xand2]
+    + 0.156ns = 1.182ns xtestadder.xadder.r2p18 [xtestadder.xadder.xr2#13.xand.xand2]
+    + 0.156ns = 1.338ns xtestadder.xadder.r3p18 [xtestadder.xadder.xr3#13.xand.xand2]
+    + 0.138ns = 1.476ns xtestadder.xadder.r4p26 [xtestadder.xadder.xr4#5.xand.xand2]
+    + 0.048ns = 1.524ns xtestadder.xadder.xr5#5.n_pi_gj [xtestadder.xadder.xr5#5.xnand1.xnand2]
+    + 0.057ns = 1.581ns xtestadder.xadder.r5g26 [xtestadder.xadder.xr5#5.xnand2.xnand2]
+    + 0.163ns = 1.744ns xtestadder.s27 [xtestadder.xadder.xsum#4.xxor2]
+    + 0.200ns = 1.944ns clk [xtestadder.xregoutxs#4.xdreg]
+
+  tPD from clk to xtestadder.s26 (1.944ns):
+
+    + 0.000ns = 0.000ns clk [vclk]
+    + 0.246ns = 0.246ns xtestadder.op0 [xtestadder.xreginxop.xdreg]
+    + 0.052ns = 0.298ns xtestadder.xadder.opmid [xtestadder.xadder.xinvop0.xinverter]
+    + 0.213ns = 0.511ns xtestadder.xadder.op1 [xtestadder.xadder.xinvopmid1.xinverter]
+    + 0.156ns = 0.667ns xtestadder.xadder.xb15 [xtestadder.xadder.xselba#0.xmux2]
+    + 0.203ns = 0.870ns xtestadder.xadder.p15 [xtestadder.xadder.xgenpandg#16.xgenp.xxor2]
+    + 0.156ns = 1.026ns xtestadder.xadder.r1p15 [xtestadder.xadder.xr1#16.xand.xand2]
+    + 0.156ns = 1.182ns xtestadder.xadder.r2p17 [xtestadder.xadder.xr2#14.xand.xand2]
+    + 0.156ns = 1.338ns xtestadder.xadder.r3p17 [xtestadder.xadder.xr3#14.xand.xand2]
+    + 0.138ns = 1.476ns xtestadder.xadder.r4p25 [xtestadder.xadder.xr4#6.xand.xand2]
+    + 0.048ns = 1.524ns xtestadder.xadder.xr5#6.n_pi_gj [xtestadder.xadder.xr5#6.xnand1.xnand2]
+    + 0.057ns = 1.581ns xtestadder.xadder.r5g25 [xtestadder.xadder.xr5#6.xnand2.xnand2]
+    + 0.163ns = 1.744ns xtestadder.s26 [xtestadder.xadder.xsum#5.xxor2]
+    + 0.200ns = 1.944ns clk [xtestadder.xregoutxs#5.xdreg]
+
+  tPD from clk to xtestadder.s25 (1.944ns):
+
+    + 0.000ns = 0.000ns clk [vclk]
+    + 0.246ns = 0.246ns xtestadder.op0 [xtestadder.xreginxop.xdreg]
+    + 0.052ns = 0.298ns xtestadder.xadder.opmid [xtestadder.xadder.xinvop0.xinverter]
+    + 0.213ns = 0.511ns xtestadder.xadder.op1 [xtestadder.xadder.xinvopmid1.xinverter]
+    + 0.156ns = 0.667ns xtestadder.xadder.xb15 [xtestadder.xadder.xselba#0.xmux2]
+    + 0.203ns = 0.870ns xtestadder.xadder.p15 [xtestadder.xadder.xgenpandg#16.xgenp.xxor2]
+    + 0.156ns = 1.026ns xtestadder.xadder.r1p16 [xtestadder.xadder.xr1#15.xand.xand2]
+    + 0.156ns = 1.182ns xtestadder.xadder.r2p16 [xtestadder.xadder.xr2#15.xand.xand2]
+    + 0.156ns = 1.338ns xtestadder.xadder.r3p16 [xtestadder.xadder.xr3#15.xand.xand2]
+    + 0.138ns = 1.476ns xtestadder.xadder.r4p24 [xtestadder.xadder.xr4#7.xand.xand2]
+    + 0.048ns = 1.524ns xtestadder.xadder.xr5#7.n_pi_gj [xtestadder.xadder.xr5#7.xnand1.xnand2]
+    + 0.057ns = 1.581ns xtestadder.xadder.r5g24 [xtestadder.xadder.xr5#7.xnand2.xnand2]
+    + 0.163ns = 1.744ns xtestadder.s25 [xtestadder.xadder.xsum#6.xxor2]
+    + 0.200ns = 1.944ns clk [xtestadder.xregoutxs#6.xdreg]

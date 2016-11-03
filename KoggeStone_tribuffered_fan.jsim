@@ -1,0 +1,101 @@
+.include "50002/nominal.jsim"
+.include "50002/stdcell.jsim"
+.include "50002/2dcheckoff_3ns.jsim"
+
+
+* Definition of a black cell
+.subckt bc pi gi pj gj pi_out gi_out
+Xinv gi gi_inv inverter
+Xnand1 pi gj n_pi_gj nand2
+Xnand2 gi_inv n_pi_gj gi_out nand2
+Xand pi pj pi_out and2
+.ends
+
+
+* Definition of a grey cell
+.subckt gc pi gi gj gi_out
+Xinv gi gi_inv inverter
+Xnand1 pi gj n_pi_gj nand2
+Xnand2 gi_inv n_pi_gj gi_out nand2
+.ends
+
+* Definition of a white cell(generates P and G)
+.subckt wc i j p g
+XgenG i j g and2
+XgenP i j p xor2
+.ends
+
+.subckt wire a b
+.connect a b
+.ends
+
+* Definition of adder32
+.subckt adder32 op0 a[31:0] b[31:0] s[31:0] z v n
+
+XinvB b[31:0] ib[31:0] inverter
+Xbuffa op0 opmid buffer_2
+Xbuffb opmid op1 buffer_8
+Xbuffc opmid op2 buffer_8
+XselBa op1#16 b[15:0] ib[15:0] xb[15:0] mux2
+XselBb op2#16 b[31:16] ib[31:16] xb[31:16] mux2
+
+
+* generate p and g signals for bit 31:1
+XgenPandG a[31:1] xb[31:1] p[31:1] g[31:1] wc
+
+* prepare the 2's complement of B by adding in the op0 as carry
+Xpng0 a0 xb0 p0 g0pre wc
+* Xbuff op0 op0b buffer
+Xprep p0 g0pre op1 g0 gc
+
+
+* row 1
+Xr1b g0 r1g0 buffer
+Xr1g p1 g1 g0 r1g1 gc
+Xr1 p[31:2] g[31:2] p[30:1] g[30:1] r1p[31:2] r1g[31:2] bc
+
+* row 2
+Xr2w r1g0 r2g0 wire 
+Xr2b r1g1 r2g1 buffer
+Xr2g r1p[3:2] r1g[3:2] r1g[1:0] r2g[3:2] gc
+Xr2 r1p[31:4] r1g[31:4] r1p[29:2] r1g[29:2] r2p[31:4] r2g[31:4] bc
+
+* row 3
+Xr3w r2g[1:0] r3g[1:0] wire
+Xr3b r2g[3:2] r3g[3:2] buffer
+Xr3g r2p[7:4] r2g[7:4] r2g[3:0] r3g[7:4] gc 
+Xr3 r2p[31:8] r2g[31:8] r2p[27:4] r2g[27:4] r3p[31:8] r3g[31:8] bc
+
+* row 4
+Xr4w r3g[3:0] r4g[3:0] wire
+Xr4b r3g[7:4] r4g[7:4] buffer
+Xrwg r3p[15:8] r3g[15:8] r3g[7:0] r4g[15:8] gc
+Xr4 r3p[31:16] r3g[31:16] r3p[23:8] r3g[23:8] r4p[31:16] r4g[31:16] bc
+
+* row 5
+Xr5w r4g[7:0] r5g[7:0] wire
+Xr5b r4g[15:8] r5g[15:8] buffer
+Xr5 r4p[31:16] r4g[31:16] r4g[15:0] r5g[31:16] gc
+
+
+Xsum0 p[0] op0 s[0] xor2
+Xsum p[31:1] r5g[30:0] s[31:1] xor2
+
+
+* generate z
+XZorCascade s[7:0] s[15:8] s[23:16] s[31:24] w[7:0] nor4
+X4AndCascade w[7:6] w[5:4] w[3:2] w[1:0] int[1:0] nand4
+XFinalZ int1 int0 z nor2
+
+* generate v
+XnotS31 s31 ns31 inverter
+XnotA31 a31 na31 inverter
+XnotXB31 xb31 nxb31 inverter
+XVckt1 a31 xb31 ns31 vp1 nand3
+XVckt2 na31 nxb31 s31 vp2 nand3
+XVckt vp1 vp2 v nand2
+
+* generate n
+.connect s31 n
+
+.ends
